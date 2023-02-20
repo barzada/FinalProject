@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:layout_height="150dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/category_RL_container"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/category_IMG_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/profile"
+
+            />
+
+        <TextView
+            android:id="@+id/category_TV_title"
+            android:text="T-Shirt"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/category_IMG_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/category_TV_title"
+            android:elevation="10dp">
+            <ImageView
+                android:id="@+id/category_IMG_next"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_baseline_navigate_next_24"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

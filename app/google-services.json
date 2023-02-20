@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1014429990888",
+    "firebase_url": "https://stylebuyer-cfd3a-default-rtdb.firebaseio.com",
+    "project_id": "stylebuyer-cfd3a",
+    "storage_bucket": "stylebuyer-cfd3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014429990888:android:ff8aee5ec3e8ce22296e5d",
+        "android_client_info": {
+          "package_name": "com.project.stylebuyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014429990888-o9epo3nu7op6v3eflj5u3sf9trkeg08a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7teTNEGL6VjjSwmyYMnsa_QReSb0SBmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014429990888-o9epo3nu7op6v3eflj5u3sf9trkeg08a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

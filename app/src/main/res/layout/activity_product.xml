@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.ProductActivity">
+
+    <ImageView
+        android:id="@+id/product_IMG_productImage"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile"
+        />
+
+    <TextView
+        android:id="@+id/product_TV_productTitle"
+        android:text="Title"
+        android:textSize="28sp"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_IMG_productImage"
+        />
+
+    <LinearLayout
+        android:id="@+id/product_LL_sizeWrapper"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_TV_productTitle"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        >
+        <Button
+            android:id="@+id/product_BTN_small"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="S"
+            android:backgroundTint="@color/primary"
+            android:layout_marginHorizontal="5dp"
+            />
+        <Button
+            android:id="@+id/product_BTN_large"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="@color/lightText"
+            android:text="L"
+            />
+        <Button
+            android:id="@+id/product_BTN_xlarge"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="@color/lightText"
+            android:text="XL"
+            />
+    </LinearLayout>
+
+   <TextView
+       android:id="@+id/product_TV_productPrice"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Price: 100 ₪"
+       android:textColor="@color/price"
+       android:textStyle="bold"
+       android:layout_below="@id/product_LL_sizeWrapper"
+       android:layout_marginTop="20dp"
+       android:textSize="22sp"
+       android:layout_marginHorizontal="10dp"
+       />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/product_BTN_order"
+        android:padding="20dp"
+        android:width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Now"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#ff22cc"
+        />
+
+
+</RelativeLayout>
