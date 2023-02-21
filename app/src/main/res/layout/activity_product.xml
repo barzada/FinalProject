@@ -48,20 +48,20 @@
             android:layout_marginHorizontal="5dp"
             />
         <Button
+            android:id="@+id/product_BTN_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="@color/lightText"
+            android:text="M"
+            />
+        <Button
             android:id="@+id/product_BTN_large"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginHorizontal="5dp"
             android:backgroundTint="@color/lightText"
             android:text="L"
-            />
-        <Button
-            android:id="@+id/product_BTN_xlarge"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginHorizontal="5dp"
-            android:backgroundTint="@color/lightText"
-            android:text="XL"
             />
     </LinearLayout>
 

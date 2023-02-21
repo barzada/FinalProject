@@ -22,12 +22,12 @@ import java.util.Calendar;
 
 public class ProductActivity extends AppCompatActivity {
     public static final String SMALL = "S";
+    public static final String MEDIUM = "M";
     public static final String LARGE = "L";
-    public static final String XLARGE = "XL";
 
     private ImageView product_IMG_productImage;
     private TextView product_TV_productTitle, product_TV_productPrice;
-    private Button product_BTN_xlarge, product_BTN_large, product_BTN_small;
+    private Button product_BTN_large, product_BTN_medium, product_BTN_small;
     private MaterialButton product_BTN_order;
     private String size;
 
@@ -55,8 +55,8 @@ public class ProductActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                product_BTN_small.setBackgroundColor(Color.parseColor("#F8D2F4"));
+                product_BTN_medium.setBackgroundColor(Color.parseColor("#CDCDCD"));
                product_BTN_large.setBackgroundColor(Color.parseColor("#CDCDCD"));
-               product_BTN_xlarge.setBackgroundColor(Color.parseColor("#CDCDCD"));
                size = SMALL;
             }
         });
@@ -65,18 +65,18 @@ public class ProductActivity extends AppCompatActivity {
             public void onClick(View view) {
                 product_BTN_large.setBackgroundColor(Color.parseColor("#F8D2F4"));
                 product_BTN_small.setBackgroundColor(Color.parseColor("#CDCDCD"));
-                product_BTN_xlarge.setBackgroundColor(Color.parseColor("#CDCDCD"));
+                product_BTN_medium.setBackgroundColor(Color.parseColor("#CDCDCD"));
                 size = LARGE;
             }
         });
 
-        product_BTN_xlarge.setOnClickListener(new View.OnClickListener() {
+        product_BTN_medium.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                product_BTN_xlarge.setBackgroundColor(Color.parseColor("#F8D2F4"));
+                product_BTN_medium.setBackgroundColor(Color.parseColor("#F8D2F4"));
                 product_BTN_small.setBackgroundColor(Color.parseColor("#CDCDCD"));
                 product_BTN_large.setBackgroundColor(Color.parseColor("#CDCDCD"));
-                size = XLARGE;
+                size = MEDIUM;
             }
         });
 
@@ -104,8 +104,8 @@ public class ProductActivity extends AppCompatActivity {
         product_TV_productTitle = findViewById(R.id.product_TV_productTitle);
         product_TV_productPrice = findViewById(R.id.product_TV_productPrice);
         product_BTN_order = findViewById(R.id.product_BTN_order);
-        product_BTN_xlarge = findViewById(R.id.product_BTN_xlarge);
         product_BTN_large = findViewById(R.id.product_BTN_large);
+        product_BTN_medium = findViewById(R.id.product_BTN_medium);
         product_BTN_small = findViewById(R.id.product_BTN_small);
     }
 }
